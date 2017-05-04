@@ -1,0 +1,23 @@
+{
+  "name": "phraser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zingdom/phraser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zingdom/phraser/issues"
+  },
+  "homepage": "https://github.com/zingdom/phraser#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "yargs": "^8.0.1"
+  }
+}
