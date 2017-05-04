@@ -40,6 +40,7 @@ reader.on('line', function (line) {
 });
 
 reader.on('close', function () {
+	let output = [];
 	for (let i = 0; i < argv.count; i++) {
 		let phrase = [];
 		let len = randomIntInclusive(argv.min, argv.max);
@@ -47,8 +48,14 @@ reader.on('close', function () {
 			phrase.push(pullRandomWord(words));
 		}
 
-		console.log(phrase.join(' '));
+		output.push({
+			name: {
+				value: phrase.join(' ')
+			}
+		});
 	}
+
+	console.log(JSON.stringify(output));
 });
 
 
